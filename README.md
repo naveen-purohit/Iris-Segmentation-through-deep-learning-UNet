@@ -15,5 +15,24 @@ Automated iris segmentation is an important component of biometric identificatio
 #### numpy
 #### glob
 # Evaluation
-Neural Network model uses Accuracy metrics for computing the accuracy of model,Adam optimizer for optimizing the Loss/cost function upto its minimum value and Binary_crossentropy as a loss function because we want to predict the binary segmented mask of iris images.
+Neural Network model uses Accuracy metrics for computing the accuracy of model,Adam optimizer for optimizing the Loss/cost function upto its minimum value and Binary_crossentropy as a loss function because we want to predict the binary segmented mask of iris images.as we approach towards total no of epochs the accuracy of model increases while the loss decreases
 ![images](https://github.com/naveen-purohit/Iris-Segmentation-through-deep-learning-UNet/blob/main/Screenshot%20(7).png)
+# Results
+Dataset |Accuracy| Loss|test accuracy|test loss
+ ---- | ----- | ------ | ------  | ------  
+ IITD | 0.9876| 0.0295 |0.9834|0.0430 
+# hyperparameters
+we have given total of 896 images for training by dividing it in the batch size of 2,epochs given are 20 so the model iterate over the whole dataset 20 times until loss minimizes.
+# Execution/Run
+To load the training images and ground truth labels you can run
+```
+python util.py
+```
+To train the model, you can run
+```
+python UNet_iris_segmentation.py 
+```
+To test the model, you can run
+```
+python predict.py
+```
