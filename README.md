@@ -8,3 +8,11 @@ Automated iris segmentation is an important component of biometric identificatio
 ![image](https://github.com/naveen-purohit/Iris-Segmentation-through-deep-learning-UNet/blob/main/Screenshot%20(5).png)
 # Dataset
  we have used here the IITD  iris dataset for the training purpose of U-net and as the label of training images we have used ground truth mask images contained in ground truth folder.
+# Modules/Libraries installation requirements
+#### Tensorflow (works as backend for keras)
+#### keras (api for implementing U-net)
+#### openCV
+#### numpy
+#### glob
+# Evaluation
+Neural Network model uses Accuracy metrics for computing the accuracy of model,Adam optimizer for optimizing the Loss/cost function upto its minimum value and Binary_crossentropy as a loss function because we want to predict the binary segmented mask of iris images.
